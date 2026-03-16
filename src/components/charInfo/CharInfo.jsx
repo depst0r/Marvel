@@ -1,9 +1,83 @@
 import './charInfo.scss';
 import thor from '../../resources/img/thor.jpeg';
+import { Component } from 'react';
+import Spinner from '../spinner/Spinner';
+import ErrorMessage from '../errorMesasage/ErrorMesasage';
+import Sceleton from '../skeleton/Skeleton';
+import MarvelService from '../../services/MarvelService';
 
-const CharInfo = () => {
-    return (
+class CharInfo extends Component {
+
+    state = {
+        char: null,
+        loading: false,
+        error: false,
+    }
+
+marvelService = new MarvelService();
+
+    componentDidMount() {
+        this.updateChar();
+    }
+
+    updateChar = () => {
+        const {charId} = this.props;
+        if (!charId) {
+            return
+        }
+
+        this.onCharLoading();
+
+        this.marvelService
+            .getCharacter(charId)
+            .then(this.onCharLoaded)
+            .catch(this.onError)
+    }  
+    
+    onCharLoaded = char => {
+    this.setState({
+        char, 
+        loading: false,
+    })
+}
+
+    onCharLoading = () =>{
+        this.setState({
+            loading: true
+        })
+    }
+
+    onError = () => {
+        this.setState({
+            loading: false,
+            error: true
+        })
+    }
+
+    
+    render() {
+        const {char, loading, error} = this.state;
+
+        const sceleton = char || loading || error ? null : <Sceleton/>
+
+            const errorMesasage = error ? <ErrorMessage/> : null;
+            const spinner = loading ? <Spinner/> : null;
+            const content = !(loading || error || !char) ? <View char={char}/> : null;
+
+        return (
         <div className="char__info">
+            {sceleton}
+            {errorMesasage}
+            {spinner}
+            {content}
+        </div>
+    )
+    }
+}
+
+const View = ({char}) => {
+    return (
+        <>
             <div className="char__basics">
                 <img src={thor} alt="abyss"/>
                 <div>
@@ -54,7 +128,7 @@ const CharInfo = () => {
                     Avengers (1996) #1
                 </li>
             </ul>
-        </div>
+        </>
     )
 }
 
