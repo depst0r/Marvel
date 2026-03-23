@@ -26,6 +26,8 @@ marvelService = new MarvelService();
         }
     }
 
+
+
     updateChar = () => {
         const {charId} = this.props;
         if (!charId) {

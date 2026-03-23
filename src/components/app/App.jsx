@@ -2,6 +2,7 @@ import AppHeader from "../appHeader/AppHeader";
 import RandomChar from "../randomChar/RandomChar";
 import CharList from "../charList/CharList";
 import CharInfo from "../charInfo/CharInfo";
+import ErrorBoyndary from '../errorBoundary/ErroBoyndary';
 
 import decoration from '../../resources/img/vision.png';
 import { Component } from "react";
@@ -25,7 +26,9 @@ onCharSelected = id => {
                 <RandomChar/>
                 <div className="char__content">
                     <CharList onCharSelected = {this.onCharSelected}/>
-                    <CharInfo charId = {this.state.selectedChar}/>
+                    <ErrorBoyndary>
+                        <CharInfo charId = {this.state.selectedChar}/>
+                    </ErrorBoyndary>
                 </div>
                 <img className="bg-decoration" src={decoration} alt="vision"/>
             </main>
