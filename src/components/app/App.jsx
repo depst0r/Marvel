@@ -23,9 +23,13 @@ onCharSelected = id => {
         <div className="app">
             <AppHeader/>
             <main>
-                <RandomChar/>
+                <ErrorBoyndary>
+                    <RandomChar/>
+                </ErrorBoyndary>
                 <div className="char__content">
-                    <CharList onCharSelected = {this.onCharSelected}/>
+                    <ErrorBoyndary>
+                        <CharList onCharSelected = {this.onCharSelected}/>
+                    </ErrorBoyndary>
                     <ErrorBoyndary>
                         <CharInfo charId = {this.state.selectedChar}/>
                     </ErrorBoyndary>
