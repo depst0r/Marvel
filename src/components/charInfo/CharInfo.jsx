@@ -6,6 +6,8 @@ import ErrorMessage from '../errorMesasage/ErrorMesasage';
 import Sceleton from '../skeleton/Skeleton';
 import MarvelService from '../../services/MarvelService';
 
+import PropTypes from 'prop-types';
+
 class CharInfo extends Component {
 
     state = {
@@ -65,7 +67,6 @@ marvelService = new MarvelService();
     
     render() {
         const {char, loading, error} = this.state;
-
         const sceleton = char || loading || error ? null : <Sceleton/>
 
             const errorMesasage = error ? <ErrorMessage/> : null;
@@ -123,6 +124,10 @@ const View = ({char}) => {
             </ul>
         </>
     )
+}
+
+CharInfo.propTypes = {
+    charId: PropTypes.number
 }
 
 export default CharInfo;
