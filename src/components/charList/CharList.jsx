@@ -59,11 +59,11 @@ class CharList extends Component {
 
     itemRefs = [];
 
-    setRef = (ref) => {
+    setRef = ref => {
         this.itemRefs.push(ref);
     }
 
-    focusOnItem = (id) => {
+    focusOnItem = id => {
         this.itemRefs.forEach(item => item.classList.remove('char__item_selected'));
         this.itemRefs[id].classList.add('char__item_selected');
         this.itemRefs[id].focus();
@@ -93,7 +93,7 @@ class CharList extends Component {
                 </li>
             )
         });
-        // А эта конструкция вынесена для центровки спиннера/ошибки
+
         return (
             <ul className="char__grid">
                 {items}
