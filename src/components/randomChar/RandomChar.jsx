@@ -35,7 +35,7 @@ const onError = () => {
 }
 
  const updateChar = () => {
-    const id = Math.floor(Math.random() * (20 - 1) * 1);
+    const id = Math.floor(Math.random() * 20) + 1;
     marvelService
         .getCharacter(id)
         .then(onCharLoaded)
@@ -74,8 +74,7 @@ const View = ({char}) => {
                 <img src={thumbnail} alt="Random character" className="randomchar__img"/>
                 <div className="randomchar__info">
                     <p className="randomchar__name">{name}</p>
-                    <p className="randomchar__descr"></p>
-                        {description}
+                    <p className="randomchar__descr">{description}</p>
                     <div className="randomchar__btns">
                         <a href={homepage} className="button button__main">
                             <div className="inner">Homepage</div>
