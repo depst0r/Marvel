@@ -12,8 +12,6 @@ const App = () =>  {
 
     const onCharSelected = id => setChar(id)
 
-
-
     return (
         <div className="app">
             <AppHeader/>
