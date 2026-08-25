@@ -1,0 +1,324 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Iron Man",
+      "description": "Genius inventor and billionaire Tony Stark in a powered armor suit.",
+      "thumbnail": "https://www.wallpaperflare.com/static/264/707/824/iron-man-the-avengers-robert-downey-junior-tony-wallpaper.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/iron-man-tony-stark"},
+        {"url": "https://en.wikipedia.org/wiki/Iron_Man"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Iron Man #1"},
+          {"name": "Avengers #1"}
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Captain America",
+      "description": "Steve Rogers, a super-soldier and symbol of freedom.",
+      "thumbnail": "https://images.hdqwalls.com/wallpapers/avengers-4-captain-america-4k-5r.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/captain-america-steve-rogers"},
+        {"url": "https://en.wikipedia.org/wiki/Captain_America"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Captain America #1"},
+          {"name": "Avengers #1"}
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Thor",
+      "description": "The Asgardian god of thunder wielding the mighty hammer Mjolnir.",
+      "thumbnail": "https://i0.wp.com/www.heyuguys.com/images/2013/10/2013_thor_the_dark_world-widescreen_wallpapers.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/thor-thor-odinson"},
+        {"url": "https://en.wikipedia.org/wiki/Thor_(Marvel_Comics)"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Thor #1"},
+          {"name": "Avengers #1"}
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Hulk",
+      "description": "Bruce Banner transforms into a green giant when angry.",
+      "thumbnail": "https://static.printler.com/cache/e/9/4/b/b/2/e94bb2c6a384b0123f55d2f346d6390ee1fc980b.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/hulk-bruce-banner"},
+        {"url": "https://en.wikipedia.org/wiki/Hulk"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Hulk #1"},
+          {"name": "Avengers #1"}
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Black Widow",
+      "description": "Natasha Romanoff, a former spy and master martial artist.",
+      "thumbnail": "https://animationxpress.com/wp-content/uploads/2020/07/black_widow.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/black-widow-natasha-romanoff"},
+        {"url": "https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Black Widow #1"},
+          {"name": "Avengers #1"}
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Falcon",
+      "description": "Sam Wilson, partner of Captain America with mechanical wings.",
+      "thumbnail": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_1_1200x1200/public/teaser_image/blog_entry/2025-02/av%20%2325%20cap%20cover.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/falcon-sam-wilson"},
+        {"url": "https://en.wikipedia.org/wiki/Falcon_(comics)"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Falcon #1"},
+          {"name": "Avengers #2"}
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Scarlet Witch",
+      "description": "Wanda Maximoff, possessing powerful magical abilities.",
+      "thumbnail": "https://static.wikia.nocookie.net/disney/images/3/36/Profile_-_Scarlet_Witch.png",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/scarlet-witch-wanda-maximoff"},
+        {"url": "https://en.wikipedia.org/wiki/Scarlet_Witch"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Scarlet Witch #1"},
+          {"name": "Avengers #2"}
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Vision",
+      "description": "A synthetic android with human emotions.",
+      "thumbnail": "https://hips.hearstapps.com/hmg-prod/images/vision-wandavision-vivo-o-muerto-1610472596.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/vision"},
+        {"url": "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Vision #1"},
+          {"name": "Avengers #2"}
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Black Panther",
+      "description": "T'Challa, the king of Wakanda and its protector.",
+      "thumbnail": "https://media.newyorker.com/photos/5a87650156b75c08a3e5bbb6/16:9/w_1280,c_limit/Cobb-Black-Panther.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/black-panther-t-challa"},
+        {"url": "https://en.wikipedia.org/wiki/Black_Panther_(character)"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Black Panther #1"},
+          {"name": "Avengers #3"}
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Spider-Man",
+      "description": "Peter Parker, a teenager with spider-like abilities.",
+      "thumbnail": "https://static.wikia.nocookie.net/spidermanmovies/images/8/8c/Spider-man_no_way_home_msp.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/spider-man-peter-parker"},
+        {"url": "https://en.wikipedia.org/wiki/Spider-Man"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Spider-Man #1"},
+          {"name": "Avengers #3"}
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": "Doctor Strange",
+      "description": "Stephen Strange, the Sorcerer Supreme of Earth.",
+      "thumbnail": "https://static.wikia.nocookie.net/marveldatabase/images/6/63/Stephen_Strange_%28Earth-199999%29_from_Doctor_Strange_in_the_Multiverse_of_Madness_Promo_001.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/doctor-strange-stephen-strange"},
+        {"url": "https://en.wikipedia.org/wiki/Doctor_Strange"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Doctor Strange #1"},
+          {"name": "Avengers #3"}
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "name": "Hawkeye",
+      "description": "Clint Barton, a master archer and marksman.",
+      "thumbnail": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/5b/Hawkeye_Infobox.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/hawkeye-clint-barton"},
+        {"url": "https://en.wikipedia.org/wiki/Hawkeye_(Clint_Barton)"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Hawkeye #1"},
+          {"name": "Avengers #3"}
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Deadpool",
+      "description": "Wade Wilson, a mercenary with accelerated healing and a twisted sense of humor.",
+      "thumbnail": "https://static.wikia.nocookie.net/marvelcentral/images/4/48/Deadpool_gives_his_approval.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/deadpool-wade-wilson"},
+        {"url": "https://en.wikipedia.org/wiki/Deadpool"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Deadpool #1"},
+          {"name": "X-Force #1"}
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "name": "Loki",
+      "description": "The trickster god and brother of Thor.",
+      "thumbnail": "https://static.wikia.nocookie.net/disney/images/1/1b/Profile_-_Loki_%28Thor_Ragnarok%29.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/loki"},
+        {"url": "https://en.wikipedia.org/wiki/Loki_(Marvel_Comics)"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Thor #2"},
+          {"name": "Avengers #5"}
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "name": "Groot",
+      "description": "A tree-like alien with limited vocabulary but a big heart.",
+      "thumbnail": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/marvel-studios-cinematic-universe/1/16/Groot_textless.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/groot"},
+        {"url": "https://en.wikipedia.org/wiki/Groot"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Guardians of the Galaxy #1"},
+          {"name": "Infinity War #2"}
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "name": "Rocket Raccoon",
+      "description": "A genetically modified raccoon with exceptional tactical skills.",
+      "thumbnail": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/marvel-studios-cinematic-universe/1/18/Rocket-raccoon-has-his-very-own-guardians-of-the-galaxy-poster-preview.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/rocket"},
+        {"url": "https://en.wikipedia.org/wiki/Rocket_Raccoon"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Guardians of the Galaxy #2"},
+          {"name": "Infinity War #3"}
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "name": "Venom",
+      "description": "An alien symbiote bonded to Eddie Brock, granting him superpowers.",
+      "thumbnail": "https://images.squarespace-cdn.com/content/v1/52a86cb9e4b098a46d38a18c/1705282352294-M0F1EHU0J3JSMY4M5N1O/venom-eddie-brock.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/venom-eddie-brock"},
+        {"url": "https://en.wikipedia.org/wiki/Venom_(character)"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Venom #1"},
+          {"name": "Spider-Man #5"}
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "name": "Thanos",
+      "description": "A powerful warlord seeking to balance the universe.",
+      "thumbnail": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Thanos_Infobox.png",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/thanos"},
+        {"url": "https://en.wikipedia.org/wiki/Thanos"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Infinity Gauntlet #1"},
+          {"name": "Avengers #6"}
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Doctor Doom",
+      "description": "Victor Von Doom, ruler of Latveria and master of both science and sorcery.",
+      "thumbnail": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2024/07/29161127/Doctor-Doom-with-energy-fist-1.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/doctor-doom-victor-von-doom"},
+        {"url": "https://en.wikipedia.org/wiki/Doctor_Doom"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Fantastic Four #1"},
+          {"name": "Secret Wars #2"}
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Silver Surfer",
+      "description": "The cosmic herald of Galactus with the Power Cosmic.",
+      "thumbnail": "https://static.wikia.nocookie.net/marveldatabase/images/8/8c/Silver_Surfer_The_Best_Defense_Vol_1_1_Skan_Variant_Textless.jpg",
+      "urls": [
+        {"url": "https://www.marvel.com/characters/silver-surfer"},
+        {"url": "https://en.wikipedia.org/wiki/Silver_Surfer"}
+      ],
+      "comics": {
+        "items": [
+          {"name": "Silver Surfer #1"},
+          {"name": "Infinity Gauntlet #2"}
+        ]
+      }
+    }
+  ]
+}

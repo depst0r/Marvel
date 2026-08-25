@@ -4,15 +4,12 @@ import ErrorMesasage from '../errorMesasage/ErrorMesasage';
 
 import './randomChar.scss';
 import mjolnir from '../../resources/img/mjolnir.png';
-import MarvelService from '../../services/MarvelService';
+import useMarvelService from '../../services/MarvelService';
 const RandomChar = () => {
 
     const [char, setChar] = useState({})
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(false)
 
-
- const marvelService = new MarvelService();
+    const {loading, error, getCharacter} = useMarvelService()
 
 useEffect(() => {
     updateChar();
@@ -26,20 +23,12 @@ useEffect(() => {
 
 const onCharLoaded = char => {
     setChar(char)
-    setLoading(false)
-}
-
-const onError = () => {
-    setLoading(false)
-    setError(true)
 }
 
  const updateChar = () => {
     const id = Math.floor(Math.random() * 20) + 1;
-    marvelService
-        .getCharacter(id)
+        getCharacter(id)
         .then(onCharLoaded)
-        .catch(onError)
 }
 
     const errorMesasage = error ? <ErrorMesasage/> : null;
