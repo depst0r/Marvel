@@ -4,17 +4,15 @@ import { useState, useEffect } from 'react';
 import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMesasage/ErrorMesasage';
 import Sceleton from '../skeleton/Skeleton';
-import MarvelService from '../../services/MarvelService';
+import useMarvelService from '../../services/MarvelService';
 
 import PropTypes from 'prop-types';
 
-const CharInfo = (props) => {
+const CharInfo = props => {
 
     const [char, setChar] = useState(null)
-    const [loading, setLoading] = useState(false)
-    const [error, setError] = useState(false)
 
-    const marvelService = new MarvelService();
+     const {loading, error, getCharacter} = useMarvelService();
 
     useEffect(() => {
         updateChar()
@@ -27,27 +25,16 @@ const CharInfo = (props) => {
             return
         }
 
-        onCharLoading();
 
-        marvelService
-            .getCharacter(charId)
+        getCharacter(charId)
             .then(onCharLoaded)
-            .catch(onError)
     }  
     
     const onCharLoaded = char => {
         setChar(char)
-        setLoading(false)
+        console.log(char.description)
     }
 
-    const onCharLoading = () =>{
-        setLoading(true)
-    }
-
-   const onError = () => {
-        setLoading(false)
-        setError(true)
-    }
 
     
         const sceleton = char || loading || error ? null : <Sceleton/>
@@ -96,7 +83,7 @@ const View = ({char}) => {
                         if (i > 9) return;
                         return (
                             <li key={i} className="char__comics-item">
-                                {item}
+                                {item.name}
                             </li>
                         )
                     })
