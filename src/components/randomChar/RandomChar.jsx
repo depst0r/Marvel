@@ -5,6 +5,7 @@ import ErrorMesasage from '../errorMesasage/ErrorMesasage';
 import './randomChar.scss';
 import mjolnir from '../../resources/img/mjolnir.png';
 import useMarvelService from '../../services/MarvelService';
+
 const RandomChar = () => {
 
     const [char, setChar] = useState({})
