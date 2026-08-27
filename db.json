@@ -320,5 +320,79 @@
         ]
       }
     }
-  ]
+  ],
+  "comics": [
+    {
+      "id": 1,
+      "title": "ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB",
+      "description": "Re-live the legendary first journey into the dystopian future of 2013 - where Sentinels stalk the Earth, and the X-Men are humanity's only hope...until they die!",
+      "pageCount": 144,
+      "thumbnail": "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/ra16-4/src/resources/img/UW.png",
+      "language": "en-us",
+      "price": 9.99
+    },
+    {
+      "id": 2,
+      "title": "X-Men: Days of Future Past",
+      "description": "The X-Men must travel back in time to prevent a catastrophic future where mutants are hunted to extinction by Sentinels.",
+      "pageCount": 120,
+      "thumbnail": "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/ra16-4/src/resources/img/x-men.png",
+      "language": "en-us",
+      "price": "NOT AVAILABLE"
+    },
+    {
+      "id": 3,
+      "title": "AVENGERS: THE KORVAC SAGA",
+      "description": "The Avengers face a cosmic threat as Korvac gains god-like powers, challenging the team in ways they've never experienced.",
+      "pageCount": 200,
+      "thumbnail": "https://i.annihil.us/u/prod/marvel/i/mg/9/40/537ba6a9f3a9e.jpg",
+      "language": "en-us",
+      "price": 14.99
+    },
+    {
+      "id": 4,
+      "title": "AMAZING SPIDER-MAN: WORLDWIDE",
+      "description": "Peter Parker takes Spider-Man global, but new enemies and old secrets threaten to destroy everything he's built.",
+      "pageCount": 160,
+      "thumbnail": "https://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba6f3279c9.jpg",
+      "language": "en-us",
+      "price": 19.99
+    },
+    {
+      "id": 5,
+      "title": "THOR: GOD OF THUNDER",
+      "description": "Thor's path takes a dark turn as he uncovers a trail of slaughtered gods across the universe.",
+      "pageCount": 120,
+      "thumbnail": "https://i.annihil.us/u/prod/marvel/i/mg/9/03/537ba6a4bbf9c.jpg",
+      "language": "en-us",
+      "price": 12.99
+    },
+    {
+      "id": 6,
+      "title": "BLACK PANTHER: A NATION UNDER OUR FEET",
+      "description": "T'Challa must defend his nation from a wave of dissidents and a new threat emerging from within Wakanda.",
+      "pageCount": 144,
+      "thumbnail": "https://i.annihil.us/u/prod/marvel/i/mg/6/80/537ba6c3e5f2e.jpg",
+      "language": "en-us",
+      "price": 15.99
+    },
+    {
+      "id": 7,
+      "title": "CAPTAIN AMERICA: WINTER SOLDIER",
+      "description": "Steve Rogers uncovers a conspiracy within S.H.I.E.L.D. and is hunted by a mysterious assassin known as the Winter Soldier.",
+      "pageCount": 176,
+      "thumbnail": "https://i.annihil.us/u/prod/marvel/i/mg/9/20/537ba6b545f9e.jpg",
+      "language": "en-us",
+      "price": 18.99
+    },
+    {
+      "id": 8,
+      "title": "DOCTOR STRANGE: SORCERER SUPREME",
+      "description": "The Sorcerer Supreme faces mystical threats from other dimensions, challenging his mastery of the mystic arts.",
+      "pageCount": 160,
+      "thumbnail": "https://i.annihil.us/u/prod/marvel/i/mg/5/50/537ba6f377a0c.jpg",
+      "language": "en-us",
+      "price": 11.99
+    }
+]
 }
