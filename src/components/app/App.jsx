@@ -3,6 +3,7 @@ import RandomChar from "../randomChar/RandomChar";
 import CharList from "../charList/CharList";
 import CharInfo from "../charInfo/CharInfo";
 import ErrorBoyndary from '../errorBoundary/ErroBoyndary';
+import ComicsList from "../comicsList/ComicsList";
 
 import decoration from '../../resources/img/vision.png';
 import { useState } from "react";
@@ -25,6 +26,9 @@ const App = () =>  {
                     </ErrorBoyndary>
                     <ErrorBoyndary>
                         <CharInfo charId = {selectedChar}/>
+                    </ErrorBoyndary>
+                    <ErrorBoyndary>
+                        <ComicsList/>
                     </ErrorBoyndary>
                 </div>
                 <img className="bg-decoration" src={decoration} alt="vision"/>
