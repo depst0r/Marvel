@@ -7,6 +7,7 @@ import ComicsList from "../comicsList/ComicsList";
 
 import decoration from '../../resources/img/vision.png';
 import { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const App = () =>  {
     const [selectedChar, setChar] = useState(null)
@@ -14,26 +15,34 @@ const App = () =>  {
     const onCharSelected = id => setChar(id)
 
     return (
+        <Router>
         <div className="app">
             <AppHeader/>
             <main>
-                <ErrorBoyndary>
-                    <RandomChar/>
-                </ErrorBoyndary>
-                <div className="char__content">
+            <Switch>
+                <Route exact path="/">
                     <ErrorBoyndary>
-                        <CharList onCharSelected = {onCharSelected}/>
+                        <RandomChar/>
                     </ErrorBoyndary>
-                    <ErrorBoyndary>
-                        <CharInfo charId = {selectedChar}/>
-                    </ErrorBoyndary>
-                    <ErrorBoyndary>
+                    <div className="char__content">
+                        <ErrorBoyndary>
+                            <CharList onCharSelected = {onCharSelected}/>
+                        </ErrorBoyndary>
+                        <ErrorBoyndary>
+                            <CharInfo charId = {selectedChar}/>
+                        </ErrorBoyndary>
+                    </div>
+                    <img className="bg-decoration" src={decoration} alt="vision"/>
+                    </Route>
+                    <Route exact path="/comics">
+                        <ErrorBoyndary>
                         <ComicsList/>
-                    </ErrorBoyndary>
-                </div>
-                <img className="bg-decoration" src={decoration} alt="vision"/>
+                        </ErrorBoyndary>
+                    </Route>
+            </Switch>
             </main>
         </div>
+        </Router>
     )
     }
 

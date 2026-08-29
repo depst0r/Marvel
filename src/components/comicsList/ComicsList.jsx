@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import useMarvelService from '../../services/MarvelService';
 import './comicsList.scss';
-import uw from '../../resources/img/UW.png';
+import Spinner from '../spinner/Spinner';
 import xMen from '../../resources/img/x-men.png';
 
 const ComicsList = () => {
@@ -39,8 +39,12 @@ const ComicsList = () => {
         )
     }
 
+            const spinner = loading ? <Spinner/> : null;
+
+
     return (
         <div className="comics__list">
+            {spinner}
             {comicsLoading()}
             <button className="button button__main button__long">
                 <div className="inner">load more</div>
